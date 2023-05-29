@@ -6,22 +6,18 @@ const SearchBarName246 = () => {
         <div className="searchbar_out">
             <div className="row">
                 <div className="col-6 position-relative" style={{paddingRight: "5px"}}>
-                    <input type="text" alt="search" className="input_name" />
-                    <label className="serach-bar-placeholder">Nombre</label>
+                    <input type="text" alt="search" placeholder="Nombre" className="input_name" />
                 </div>
                 <div className="col-6 position-relative" style={{paddingLeft: "5px"}}>
-                    <input type="text" alt="search" className="input_name" />
-                    <label className="serach-bar-placeholder">Comuna</label>
+                    <input type="text" alt="search" placeholder="Comuna" className="input_name" />
                 </div>                
             </div>
             <div className="row" style={{marginTop: "20px"}}>
                 <div className="col-6 position-relative" style={{paddingRight: "5px"}}>
-                    <input type="text" alt="search" className="input_name" />
-                    <label className="serach-bar-placeholder">SALUD</label>
+                    <input type="text" alt="search" placeholder="SALUD" className="input_name" />
                 </div>
                 <div className="col-6 position-relative" style={{paddingLeft: "5px"}}>
-                    <input type="text" alt="search" className="input_name" />
-                    <label className="serach-bar-placeholder">DV</label>
+                    <input type="text" alt="search" placeholder="DV" className="input_name" />
                 </div>                
             </div>
             <div style={{ display: "flex", justifyContent: "center", marginTop: "30px" }}>
