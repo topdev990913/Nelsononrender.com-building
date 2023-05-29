@@ -7,6 +7,7 @@ const SearchBarName12 = ({ setListData }) => {
     const [value1, setValue1] = useState('')
     const [value2, setValue2] = useState('')
     const navigate = useNavigate()
+
     return (
         <div className="searchbar_out">
             <div className="row">
@@ -23,13 +24,13 @@ const SearchBarName12 = ({ setListData }) => {
             <div style={{ display: "flex", justifyContent: "center", marginTop: "30px" }}>
                 <button className="searchButton1" onClick={() => {
                     axios.post('http://localhost:4000/students/temp12', { "name": value, "Address": value1, "Common": value2 })
-                        .then((response) => {
-                            setListData(response.data)
-                            console.log("response.data", response.data);
-                            navigate("/SearchResult");
-                        })
-                        .catch((e) => { console.log(e) })
-                        .finally(() => setValue(''))
+                    .then((response) => {
+                        setListData(response.data)
+                        console.log("response.data", response.data);
+                        navigate("/SearchResult");
+                    })
+                    .catch((e) => { console.log(e) })
+                    .finally(() => setValue(''))
                 }}> BUSCAR </button>
             </div>
 
