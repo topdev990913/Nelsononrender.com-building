@@ -155,7 +155,7 @@ const Name = ({listData, setListData}) => {
     return (
         <div className="container-fluid">
             <div className="name_title">
-                Encuentra Emails y números <br />de teléfono de millones de personas
+                Encuentra Emails y números <br /> de teléfono de millones de personas
             </div>
             <div className="name_subtitle">
                 Busque información de decontactos actualizada por nombre, rut,
