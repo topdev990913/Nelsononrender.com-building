@@ -9,7 +9,19 @@ const SearchBarName12 = ({ setListData }) => {
     const navigate = useNavigate()
 
     return (
-        <div className="searchbar_out">
+        <div className="searchbar_out" onKeyUp={(e) => {
+            if (e.key === "Enter") {
+                console.log("-------------------")
+                axios.post('http://localhost:4000/students/temp12', { "name": value, "Address": value1, "Common": value2 })
+                    .then((response) => {
+                        setListData(response.data)
+                        console.log("response.data", response.data);
+                        navigate("/SearchResult");
+                    })
+                    .catch((e) => { console.log(e) })
+                    .finally(() => setValue(''))
+            }
+        }}>
             <div className="row">
                 <div className="col-4 position-relative" style={{ paddingRight: "2px" }}>
                     <input type="text" alt="search" placeholder="Nombre" className="input_name" value={value} onChange={(e) => { setValue(e.target.value) }} />

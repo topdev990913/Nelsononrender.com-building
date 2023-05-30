@@ -31,7 +31,11 @@ const Login = () => {
     }
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid" onKeyUp={(e) => {
+            if (e.key === "Enter") {
+                dispatch(login(Admin_user, Admin_pass))
+            }
+        }}>
             <Navbar
                 bg="light"
                 expand="lg"
