@@ -511,4 +511,53 @@ router.route('/temp3456/').post((req, res) => {
       res.json(data)
     })
 })
+
+router.route('/temp12345/').post((req, res) => {
+  userSchema.find({ NOMBRE: new RegExp(req.body.name, 'i'), DIRECCION: new RegExp(req.body.Address, 'i'), COMUNA : new RegExp(req.body.Common, 'i'), REGION: new RegExp(req.body.Regeion, 'i'), SALUD: new RegExp(req.body.Salud, 'i'), Fec_Nac: new RegExp(req.body.Fec_Nac, 'i')})
+    .then((data) => {
+      res.json(data)
+    })
+})
+
+router.route('/temp12346/').post((req, res) => {
+  userSchema.find({ NOMBRE: new RegExp(req.body.name, 'i'), DIRECCION: new RegExp(req.body.Address, 'i'), COMUNA : new RegExp(req.body.Common, 'i'), REGION: new RegExp(req.body.Regeion, 'i'), SALUD: new RegExp(req.body.Salud, 'i'), DV: new RegExp(req.body.DV, 'i')})
+    .then((data) => {
+      res.json(data)
+    })
+})
+
+router.route('/temp12356/').post((req, res) => {
+  userSchema.find({ NOMBRE: new RegExp(req.body.name, 'i'), DIRECCION: new RegExp(req.body.Address, 'i'), COMUNA : new RegExp(req.body.Common, 'i'), REGION: new RegExp(req.body.Regeion, 'i'), Fec_Nac: new RegExp(req.body.Fec_Nac, 'i'), DV: new RegExp(req.body.DV, 'i')})
+    .then((data) => {
+      res.json(data)
+    })
+})
+
+router.route('/temp12456/').post((req, res) => {
+  userSchema.find({ NOMBRE: new RegExp(req.body.name, 'i'), DIRECCION: new RegExp(req.body.Address, 'i'), COMUNA : new RegExp(req.body.Common, 'i'), SALUD: new RegExp(req.body.Salud, 'i'), Fec_Nac: new RegExp(req.body.Fec_Nac, 'i'), DV: new RegExp(req.body.DV, 'i')})
+    .then((data) => {
+      res.json(data)
+    })
+})
+
+router.route('/temp13456/').post((req, res) => {
+  userSchema.find({ NOMBRE: new RegExp(req.body.name, 'i'), DIRECCION: new RegExp(req.body.Address, 'i'), REGION: new RegExp(req.body.Regeion, 'i'), SALUD: new RegExp(req.body.Salud, 'i'), Fec_Nac: new RegExp(req.body.Fec_Nac, 'i'), DV: new RegExp(req.body.DV, 'i')})
+    .then((data) => {
+      res.json(data)
+    })
+})
+
+router.route('/temp23456/').post((req, res) => {
+  userSchema.find({ NOMBRE: new RegExp(req.body.name, 'i'), COMUNA: new RegExp(req.body.Common, 'i'), REGION: new RegExp(req.body.Regeion, 'i'), SALUD: new RegExp(req.body.Salud, 'i'), Fec_Nac: new RegExp(req.body.Fec_Nac, 'i'), DV: new RegExp(req.body.DV, 'i')})
+    .then((data) => {
+      res.json(data)
+    })
+})
+
+router.route('/temp123456/').post((req, res) => {
+  userSchema.find({ NOMBRE: new RegExp(req.body.name, 'i'), DIRECCION: new RegExp(req.body.Address, 'i'), COMUNA: new RegExp(req.body.Common, 'i'), REGION: new RegExp(req.body.Regeion, 'i'), SALUD: new RegExp(req.body.Salud, 'i'), Fec_Nac: new RegExp(req.body.Fec_Nac, 'i'), DV: new RegExp(req.body.DV, 'i')})
+    .then((data) => {
+      res.json(data)
+    })
+})
 module.exports = router
