@@ -13,10 +13,22 @@ const Telephone = ({ listData, setListData }) => {
             <div className="name_subtitle">
                 ¡Reúna información más profunda sobre quienes están detrás del número: <br />nombre del propietario, historial laboral, educación, perfiles sociales y mucho más!
             </div>
-            <div className="searchbar_out">
+            <div className="searchbar_out" onKeyUp={(e) => {
+                if (e.key === "Enter") {
+                    console.log("-------------------")
+                    axios.post('http://localhost:4000/students/temp_telephone', { "telephone": value })
+                                .then((response) => {
+                                    setListData(response.data)
+                                    console.log("response.data", response.data);
+                                    if (response.data.length) navigate("/SearchResult");
+                                    else alert("No puedo encontrar los datos")
+                                })
+                                .catch((e) => { console.log(e) })
+                                .finally(() => setValue(''))
+                }
+            }}>
                 <div className="row">
                     <div className="col-9 position-relative">
-                        {/* <input type="text" alt="search" className="input_name" /> */}
                         <input type="text" placeholder="Teléfono" value={value} onChange={(e) => { setValue(e.target.value) }} alt="search" className="input_name" />
                     </div>
                     <div className="col-3" style={{ display: "flex", justifyContent: "right", paddingLeft: "10px" }}>

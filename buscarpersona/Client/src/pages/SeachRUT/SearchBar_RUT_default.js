@@ -8,7 +8,20 @@ const SearchBarRUTDefault = ({ setListData }) => {
     // console.log("show", show)
     const navigate = useNavigate()
     return (
-        <div className="searchbar_out">
+        <div className="searchbar_out" onKeyUp={(e) => {
+            if (e.key === "Enter") {
+                console.log("-------------------")
+                axios.post('http://localhost:4000/students/temp_RUT', { "RUT": value })
+                            .then((response) => {
+                                setListData(response.data)
+                                console.log("response.data", response.data);
+                                if (response.data.length) navigate("/SearchResult");
+                                else alert("No puedo encontrar los datos")
+                            })
+                            .catch((e) => { console.log(e) })
+                            .finally(() => setValue(''))
+            }
+        }}>
             <div className="row">
                 <div className="col-9 position-relative">
                     <input type="text" alt="search" className="input_name" placeholder="RUT" value={value} onChange={(e) => { setValue(e.target.value) }} />

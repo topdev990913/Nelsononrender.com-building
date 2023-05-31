@@ -7,7 +7,20 @@ const SearchBarRUTRegeion = ({ setListData }) => {
     const [value1, setValue1] = useState('')
     const navigate = useNavigate()
     return (
-        <div className="searchbar_out">
+        <div className="searchbar_out" onKeyUp={(e) => {
+            if (e.key === "Enter") {
+                console.log("-------------------")
+                axios.post('http://localhost:4000/students/temp_RUT_Regeion', { "RUT": value, "Regeion": value1 })
+                        .then((response) => {
+                            setListData(response.data)
+                            console.log("response.data", response.data);
+                            if (response.data.length) navigate("/SearchResult");
+                            else alert("No puedo encontrar los datos")
+                        })
+                        .catch((e) => { console.log(e) })
+                        .finally(() => setValue(''))
+            }
+        }}>
             <div className="row">
                 <div className="col-6 position-relative" style={{ paddingRight: "5px" }}>
                     <input type="text" alt="search" placeholder="RUT" className="input_name" value={value} onChange={(e) => { setValue(e.target.value) }} />

@@ -63,6 +63,8 @@ import SearchBarName123456 from "./SearchName/SearchBar_Name123456";
 import SearchBarName23456 from "./SearchName/SearchBar_Name23456";
 import SearchBarName1356 from "./SearchName/SearchBar_Name1356";
 import SearchBarName1245 from "./SearchName/SearchBar_Name1245";
+import SearchBarName1246 from "./SearchName/SearchBar_Name1246";
+import SearchBarName1256 from "./SearchName/SearchBar_Name1256";
 
 const Name = ({listData, setListData}) => {
     const [show1, SetShow1] = useState(false);
@@ -136,6 +138,8 @@ const Name = ({listData, setListData}) => {
         if (show1 === true & show2 === true & show3 === true & show4 === false & show5 === true & show6 === false) return <SearchBarName1235 setListData={setListData} />  
         if (show1 === true & show2 === true & show3 === true & show4 === false & show5 === false & show6 === true) return <SearchBarName1236 setListData={setListData} />  
         if (show1 === true & show2 === true & show3 === false & show4 === true & show5 === true & show6 === false) return <SearchBarName1245 setListData={setListData} />  
+        if (show1 === true & show2 === true & show3 === false & show4 === true & show5 === false & show6 === true) return <SearchBarName1246 setListData={setListData} />  
+        if (show1 === true & show2 === true & show3 === false & show4 === false & show5 === true & show6 === true) return <SearchBarName1256 setListData={setListData} />  
         if (show1 === true & show2 === false & show3 === true & show4 === true & show5 === true & show6 === false) return <SearchBarName1345 setListData={setListData} />  
         if (show1 === true & show2 === false & show3 === true & show4 === true & show5 === false & show6 === true) return <SearchBarName1346 setListData={setListData} />  
         if (show1 === true & show2 === false & show3 === true & show4 === false & show5 === true & show6 === true) return <SearchBarName1356 setListData={setListData} />  

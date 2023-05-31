@@ -23,7 +23,20 @@ const Email = ({ listData, setListData }) => {
             <div className="name_subtitle">
                 Obtenga más información sobre la persona detrás del correo <br />electrónico: información de contacto, historial profesional y más.
             </div>
-            <div className="searchbar_out">
+            <div className="searchbar_out" onKeyUp={(e) => {
+                if (e.key === "Enter") {
+                    console.log("-------------------")
+                    axios.post('http://localhost:4000/students/temp_Email', { "Email": value })
+                        .then((response) => {
+                            setListData(response.data)
+                            console.log("response.data", response.data);
+                            if (response.data.length) navigate("/SearchResult");
+                            else alert("No puedo encontrar los datos")
+                        })
+                        .catch((e) => { console.log(e) })
+                        .finally(() => setValue(''))
+                }
+            }}>
                 <div className="row">
                     <div className="col-9 position-relative">
                         <input type="text" alt="search" className="input_name" placeholder="Correo electrónico" value={value} onChange={(e) => { setValue(e.target.value) }} />

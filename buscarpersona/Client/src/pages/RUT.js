@@ -33,7 +33,7 @@ const RUT = ({listData, setListData}) => {
             {displaySearchRUT()}
             
             <div className="Add_Job">
-                <button className="SortSearchButton1" onClick={handleShowposition}> {showposition === false? "+COMUNA" : "-COMUNA" }</button>
+                <button className="SortSearchButton1" onClick={handleShowposition}> {showposition === false? "+Comuna" : "-Comuna" }</button>
                 <button className="SortSearchButton1"onClick={handleShowposition1}> {showposition1 === false? "+Región" : "-Región"}  </button>
             </div>
 
