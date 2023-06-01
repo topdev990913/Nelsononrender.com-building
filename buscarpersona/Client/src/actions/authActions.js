@@ -12,7 +12,7 @@ export const LOGOUT = '@account/logout';
 export const REGISTER = '@account/register';
 export const UPDATE_PROFILE = '@account/update-profile';
 
-export function login(name, password) {
+export function  login(name, password) {
   return async (dispatch) => {
     try {
       dispatch({ type: LOGIN_REQUEST });
@@ -26,9 +26,8 @@ export function login(name, password) {
         }
       });
     } catch (error) {
-      
-      dispatch({ type: LOGIN_FAILURE });
-      throw error;
+      dispatch({ type: LOGIN_FAILURE, payload: { error: error.response.data?.message } });
+      // throw error;
     }
   };
 }

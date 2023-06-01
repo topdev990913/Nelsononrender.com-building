@@ -285,6 +285,16 @@ h1.companyname {
     font-weight: 300;
 }
 
+.Signin_text1 {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    color: #eb0b0b;
+    font-family: "Lato", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
 .Signin_text:hover {
     color: #009E60;
     cursor: pointer;

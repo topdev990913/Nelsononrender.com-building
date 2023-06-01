@@ -13,7 +13,7 @@ import { useState } from 'react';
 // import Modal from 'react-bootstrap/Modal';
 import Dropdown from 'react-bootstrap/Dropdown';
 import Stack from "react-bootstrap/Stack";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { login } from "../actions/authActions";
 <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
@@ -26,6 +26,9 @@ const Login = () => {
     const [Admin_pass, setAdmin_pass] = useState()
     const handleChangeUser = (e) => setAdmin_user(e.target.value)
     const handleChangePass = (e) => setAdmin_pass(e.target.value)
+
+    const loginError = useSelector(state => state.auth.error)
+
     const onSubmit = () => {
         dispatch(login(Admin_user, Admin_pass))
     }
@@ -124,8 +127,12 @@ const Login = () => {
                 </div>
                 <div className="Signin_btn">
                     <button className="Signin_button" onClick={onSubmit}>Iniciar sesión</button>
-                    {/* DoKabi */}
                 </div>
+                { loginError && 
+                    (<div className="Signin_text1">
+                        {loginError}
+                    </div>)
+                }
                 <div className="Signin_text">
                     ¿Olvidaste tu contraseña?
                 </div>

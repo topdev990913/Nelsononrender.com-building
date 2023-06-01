@@ -39,7 +39,7 @@ class AuthService {
           this.setSession(response.data.accessToken);
           resolve(response.data.user);
         } else {
-          reject(response.data.error);
+          reject(response.data.message);
         }
       })
       .catch((error) => {
