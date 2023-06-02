@@ -1,6 +1,6 @@
 import React from "react";
 import './Admin.css';
-import Admin_option_Logo from '../images/Upload_image.png'
+// import Admin_option_Logo from '../images/Upload_image.png'
 import { useState } from 'react';
 import Admin_Back_Logo from '../images/Back.png'
 import AdminUpload from "./Admin_upload";
@@ -42,7 +42,7 @@ const AdminPage = () => {
                     <button className="Admin_option_button" onClick={handleAdminShow1}> Introducción </button>
                     <button className="Admin_option_button" onClick={handleAdminShow2}> subiendo uno </button>
                     <button className="Admin_option_button" onClick={handleAdminShow3}> cargando CSV </button>
-                    <img src={Admin_option_Logo} alt="flag" className="Admin_Option_Logo_insert" />
+                    {/* <img src={Admin_option_Logo} alt="flag" className="Admin_Option_Logo_insert" /> */}
                 </div>
                 <div className="col-lg-10 col-md-12 col-sm-12 col-xs-12 Admin_items" style={{backgroundColor: "#c5dacd"}}>
                     {displayAdmin()}

@@ -76,7 +76,7 @@
 }
 
 .Admin_option_button:hover {
-    font-size: 28px;
+    font-size: 26px;
     background: rgb(248, 246, 246);
     color: #009E60;
     font-weight: bold;
@@ -88,6 +88,9 @@
         height: 50px;
         font-size: 23px;
     }
+    .Admin_option_button:hover {
+        font-size: 24px;
+    }
 }
 
 
@@ -97,6 +100,9 @@
         height: 45px;
         font-size: 21px;
     }
+    .Admin_option_button:hover {
+        font-size: 22px;
+    }
 }
 
 @media only screen and (max-width: 980px) {
@@ -105,11 +111,37 @@
         height: 40px;
         font-size: 20px;
     }
+    .Admin_option_button:hover {
+        font-size: 21px;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .Admin_option_button {
+        margin-top: 30px;
+        height: 35px;
+        font-size: 17px;
+        
+    }
+    .Admin_option_button:hover {
+        font-size: 18px;
+    }   
+}
+
+@media only screen and (max-width: 580px) {
+    .Admin_option_button {
+        margin-top: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    .Admin_option_button:hover {
+        font-size: 15px;
+    }
 }
 
 .Admin_option_button:focus {
     font-weight: bold;
-    font-size: 28px;
+
 }
 
 .Admin_input_out {
