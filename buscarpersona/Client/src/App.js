@@ -11,7 +11,6 @@ import AdminPage from "./navbar/AdminPage";
 import AdminUpload from "./navbar/Admin_upload";
 import ProtectedRoute from "./ProtectedRoute";
 import PublicRoute from "./PublicRoute";
-
 function App() {
 
   const [listData, setListData] = useState([])
