@@ -922,8 +922,9 @@ a {
   }
   ::placeholder {
     color: #4d91da;
-    font-size: 22px;
+    font-size: 42px;
     opacity: 1;
+    margin-left: 100px;
   }
 
   .serach-bar-placeholder {
@@ -970,6 +971,8 @@ a {
   color: #5D6775;
   font-size: 30px;
   opacity: 1;
+  /* margin-left: 10px; */
+  padding-left:5px;
 }
 
 .input_name:focus {

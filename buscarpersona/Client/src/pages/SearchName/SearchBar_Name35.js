@@ -23,7 +23,7 @@ const SearchBarName35 = ({ setListData }) => {
         }}>
             <div className="row">
                 <div className="col-4 position-relative" style={{ paddingRight: "2px" }}>
-                    <input type="text" alt="search" placeholder="Nombre" className="input_name" value={value} onChange={(e) => { setValue(e.target.value) }} />
+                    <input type="text" alt="search" placeholder="NOMBRE" className="input_name" value={value} onChange={(e) => { setValue(e.target.value) }} />
                 </div>
                 <div className="col-4 position-relative" style={{ paddingLeft: "2px", paddingRight: "2px" }}>
                     <input type="text" alt="search" placeholder="Región" className="input_name" value={value1} onChange={(e) => { setValue1(e.target.value) }} />
