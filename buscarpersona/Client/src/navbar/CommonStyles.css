@@ -419,5 +419,6 @@ h1.companyname {
 }
 
 .Login_Background {
-    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) -10%, rgba(255, 255, 255, 0) 70%), url(../images/0eef73355e8e8fa0c079c1f8bbf71eec.svg);
+    background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 0) 100%), url(../images/0eef73355e8e8fa0c079c1f8bbf71eec.svg);
+    background-position: calc(100% - 300px) 900px;
 }

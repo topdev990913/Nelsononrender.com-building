@@ -24,7 +24,7 @@ const Sales = () => {
                 <div className="Sales_subtitle">
                     Contactos para generar más clientes potenciales, ventas e ingresos. Aproveche nuestros <br />datos para llegar a más tomadores de decisiones en menos tiempo, a una fracción del costo.
                 </div>
-                <div className="row">
+                <div className="row" style={{marginTop: "60px"}}>
                     <div className="col-lg-4 col-md-4 col-sm-12 col-xs-12 card_out">
                         <div className="Sales_image">
                             <img src={SalesLogo} alt="flag" className="logoinsert" />
@@ -94,7 +94,7 @@ const Sales = () => {
 
                 <div className="row">
                     <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12" style={{ display: "flex", justifyContent: "right" }}>
-                        <div className="container List_out">
+                        <div className="container List_out1">
                             <div className="row">
                                 <div className="col-2" style={{ display: "flex", justifyContent: "right" }}>
                                     <img src={Value} alt="flag" className="imageInsert" />
@@ -152,7 +152,7 @@ const Sales = () => {
 
                 <div className="row">
                     <div className="col-lg-6 col-md-12 col-sm-12 col-xs-12" style={{ display: "flex", justifyContent: "center"}}>
-                        <div className="container List_out">
+                        <div className="container List_out1">
                             <div className="row">
                                 <div className="col-2" style={{ display: "flex", justifyContent: "right" }}>
                                     <img src={Seamless} alt="flag" className="imageInsert" />

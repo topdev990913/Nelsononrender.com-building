@@ -1161,8 +1161,8 @@ a {
 
 img.logoinsert {
   object-fit: contain;
-  width: 30%;
-  height: 40%;
+  width: 25%;
+  height: 30%;
   -webkit-animation: mover 1s infinite alternate;
   animation: mover 1s infinite alternate;
 }
@@ -1178,7 +1178,7 @@ img.logoinsert {
   }
 
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-3px);
   }
 }
 
@@ -1188,7 +1188,7 @@ img.logoinsert {
   }
 
   100% {
-    transform: translateY(-20px);
+    transform: translateY(-3px);
   }
 }
 
@@ -1233,10 +1233,12 @@ img.logoinsert {
   font-family: "Lora";
 }
 
-.List_out {
+.List_out1 {
   padding-left: 50px;
   padding-right: 50px;
+  margin-left: 150px!important;
 }
+
 
 @media only screen and (max-width: 1500px) {
   .List_out {
@@ -1348,6 +1350,7 @@ img.logoinsert {
 }
 
 .Footer_background {
+  margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 80px;
   background-image: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 40%), url(../images/0eef73355e8e8fa0c079c1f8bbf71eec.svg);
