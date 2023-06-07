@@ -75,6 +75,18 @@
     color: #009E60;
 }
 
+.Admin_option_button_click {
+    margin-top: 50px;
+    height: 60px;
+    font-size: 25px;
+    padding: 5px 15px;
+    border: none;
+    width: 100%;
+    background: rgb(248, 246, 246);
+    color: #009E60;
+    font-weight: bold;
+}
+
 .Admin_option_button:hover {
     font-size: 26px;
     background: rgb(248, 246, 246);

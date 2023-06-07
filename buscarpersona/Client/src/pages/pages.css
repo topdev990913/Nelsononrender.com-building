@@ -422,6 +422,21 @@ tbody>tr>th {
   position: relative;
 }
 
+.SortSearchButton_click {
+  padding: 6px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  border: none;
+  color: #009e60;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  font-family: "Corben";
+  position: relative;
+  border-bottom: 4px solid #009e60;
+}
+
 .SortSearchButton1 {
   padding: 6px;
   margin-left: 10px;

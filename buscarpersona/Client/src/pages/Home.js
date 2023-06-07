@@ -28,10 +28,10 @@ const Home = ({listData, setListData}) => {
   return (
       <div className="container-fluid">
         <div className="SortSearchType">
-          <button className="SortSearchButton" onClick={handleShow1}> Nombre </button>
-          <button className="SortSearchButton" onClick={handleShow2}> Teléfono </button>
-          <button className="SortSearchButton" onClick={handleShow3}> Email </button>
-          <button className="SortSearchButton" onClick={handleShow4}> RUT </button>
+          <button className={show===1?"SortSearchButton_click" :"SortSearchButton"} onClick={handleShow1}> Nombre </button>
+          <button className={show===2?"SortSearchButton_click" :"SortSearchButton"} onClick={handleShow2}> Teléfono </button>
+          <button className={show===3?"SortSearchButton_click" :"SortSearchButton"} onClick={handleShow3}> Email </button>
+          <button className={show===4?"SortSearchButton_click" :"SortSearchButton"} onClick={handleShow4}> RUT </button>
         </div>
         <div className="Select_sort_out">
           {displayCase()}
