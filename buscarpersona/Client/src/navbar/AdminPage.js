@@ -2,7 +2,8 @@ import React from "react";
 import './Admin.css';
 // import Admin_option_Logo from '../images/Upload_image.png'
 import { useState } from 'react';
-import Admin_Back_Logo from '../images/Back.png'
+// import Admin_Back_Logo from '../images/Back.png'
+import Admin_Back_Logo from '../images/Logout1.png'
 import AdminUpload from "./Admin_upload";
 import AdminUploadCsv from "./AdminUploadCsv";
 import AdminIntroduction from "./Admin_Introduction";
@@ -30,10 +31,13 @@ const AdminPage = () => {
         <div>
             <div className="Admin_topbar">
                 <div className="col-2">
-                    <img src={Admin_Back_Logo} alt="flag" className="Admin_Back_Logo_insert" onClick={handleSingout} />
+                    
                 </div>
-                <div className="col-10 text_display">
+                <div className="col-8 text_display">
                     Panel de administración
+                </div>
+                <div className="col-2">
+                    <img src={Admin_Back_Logo} alt="flag" className="Admin_Back_Logo_insert" onClick={handleSingout} />
                 </div>
             </div>
 

@@ -240,19 +240,21 @@
 }
 
 .Admin_Back_Logo_insert {
-    width: 30%;
-    height: 60%;
-    margin-top: 12px;
-    margin-left: 15px;
+    width: 25%;
+    height: 90%;
+    margin-top: 5px;
 }
 
 .Admin_Back_Logo_insert:hover {
-    width: 31%;
-    height: 61%;
-    margin-top: 12px;
-    margin-left: 15px;
+    width: 26%;
+    height: 95%;
+    margin-top: 4px;
+    margin-left: -1px;
 }
-
+.a {
+    font-size: 22px;
+    font-weight: bold;
+}
 @media only screen and (max-width: 1300px) {
     .Admin_Back_Logo_insert {
         width: 25%;
