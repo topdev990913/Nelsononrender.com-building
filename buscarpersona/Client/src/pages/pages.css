@@ -677,6 +677,7 @@ tbody>tr>th {
   transition: all .4s;
   outline: none !important;
   box-shadow: none !important;
+  border: 2px solid black;
 }
 
 .form-select {
@@ -825,7 +826,7 @@ a {
   }
 
   .input_name {
-    border-color: #697179;
+    /* border-color: #697179; */
     border-radius: 10px;
     height: 60px;
   }
@@ -848,7 +849,7 @@ a {
     background-color: #009E60;
     font-size: 18px;
     font-weight: 600;
-    color: white;
+    color: white;   
     padding: 6px 13px;
     border-radius: 6px;
     border: none;
@@ -928,7 +929,7 @@ a {
   }
 
   .input_name {
-    border-color: #697179;
+    /* border-color: #697179; */
     border-radius: 10px;
     height: 50px;
   }
@@ -960,7 +961,7 @@ a {
   }
 
   .input_name {
-    border-color: #697179;
+    /* border-color: #697179; */
     border-radius: 10px;
     height: 40px;
   }
@@ -1357,7 +1358,7 @@ img.logoinsert {
 }
 
 .Footer_title {
-  font-size: 15px;
+  font-size: 15px;  
   font-weight: bold;
   letter-spacing: 0.6px;
   line-height: normal;

@@ -165,14 +165,14 @@
 .Admin_input_style {
     width: 60%;
     height: 50px;
-    border: 5px solid #009E60;
+    border: 4px solid #009E60;
     /* border-radius: 5px; */
 }
 
 .Admin_input_style:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #86b7fe;
+    border-color: #6aa2f7;
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, .25);
 }
