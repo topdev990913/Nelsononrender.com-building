@@ -100,15 +100,15 @@
   margin-top: 10px;
   border: none;
   outline: none;
-  padding: 17px 10px;
+  padding: 16px 10px;
   min-width: 150px;
   color: rgb(248, 239, 239);
   background: #1a1036;
   cursor: pointer;
   position: relative;
-  z-index: 0;
+  z-index: 10;
   border-radius: 103px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   display: block;
   box-shadow: 0 0 0 rgba(12, 11, 9, 0.4);
   animation: getting_startted 2s infinite;
